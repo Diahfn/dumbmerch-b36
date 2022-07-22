@@ -1,0 +1,279 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0b0b0b !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.bg {
+  background: #0b0b0b !important;
+  min-height: 100vh;
+  color: white;
+}
+
+.merch_description {
+  font-family: 'Roboto';
+  margin-top: 28px;
+}
+
+.merch_description p {
+  width: 370px;
+  color: #6A6A6A;
+  font-size: 15px;
+}
+
+.search_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-weight: 600;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  padding: 5px 35px;
+}
+
+.image_product {
+  width: 360px;
+  height: 440px;
+  border-radius: 3px;
+}
+
+.red_font {
+  color: #F74D4D;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+img {
+  image-rendering: optimizeSpeed;
+}
+
+.text_profile {
+  color: #F74D4D;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.img-transaction {
+  width: 85px;
+  height: 90px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.transaction-card {
+  width: 540px;
+  background-color: #303030;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card:hover  {
+  transform: scale(1.1);
+  box-shadow: 0 0 7px 2px #6d6875;
+  z-index: 2;
+}
+
+/* Style for admin page */
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 15px 20px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.table > tbody > tr > td {
+  font-weight: 300;
+}
+
+.mytable > tbody > tr > td,
+.mytable > tbody > tr > th,
+.mytable > tfoot > tr > td,
+.mytable > tfoot > tr > th,
+.mytable > thead > tr > td,
+.mytable > thead > tr > th {
+  padding: 20px;
+  width: 350px;
+}
+
+textarea {
+  background-color: #303030;
+  border: 1px solid #BCBCBC;
+  resize: none;
+  height: 110px;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #FFFFFF;
+}
+::placeholder {
+  color: #FFFFFF;
+}
+
+:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.add-product {
+  background-color: #303030;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #FFFFFF;
+  border: 1px solid #BCBCBC;
+  margin: 5px 0 5px 0;
+}
+
+.upload-file {
+  background-color: #F74D4D;
+  padding: 7px 20px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.input-category {
+  background-color: #303030;
+  border: 1px solid #BCBCBC;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 15px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.card-category {
+  background-color: #303030;
+  border-radius: 5px;
+  border: 1px solid #BCBCBC;
+}
+
+.btn-category {
+  background-color: #56C05A;
+  width: 100%;
+  height: 43px;
+  border-radius: 7px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.text-contact {
+  font-size: 14px;
+}
+
+.text-contact-chat {
+  color: #ababab;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact img {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact:hover {
+  background-color: #212121;
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact:active {
+  background-color: #3d3d3d;
+  transition: 0.3s;
+}
+
+.contact-active {
+  background-color: #212121;
+  border-radius: 5px;
+}
+
+.input-message {
+  width: 100%;
+  height: 90%;
+  background: rgba(171, 171, 171, 0.15);
+  border: none;
+  color: #ffffff;
+}
+
+.chat-me {
+  position: relative;
+  background: #262626;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-me::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -15px;
+  border-top: 15px solid transparent;
+  border-left: 20px solid #262626;
+  border-bottom: 15px solid transparent;
+}
+.chat-other {
+  position: relative;
+  background: #575757;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+}
+
+.chat-other::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -15px;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #575757;
+  border-bottom: 15px solid transparent;
+}
+
+.img-chat {
+  width: 40px;
+  height: 35px;
+}
