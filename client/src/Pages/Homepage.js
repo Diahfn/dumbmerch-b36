@@ -28,18 +28,6 @@ export default function Homepage() {
         return response.data.product
     })
 
-    const fil = () => {
-        const data = products?.filter((item, index) => {
-            if (searchItem == '') {
-                <ProductCard item={item} key={item} />
-            } else if (item.name.toLowerCase().includes(searchItem.toLowerCase())) {
-                <ProductCard item={item} key={index} />
-                console.log(item.name)
-            }
-        })
-        return data
-    }
-
   return (
     <div className='bg'>
         <NavBar title={title}  />
@@ -52,7 +40,6 @@ export default function Homepage() {
                         type='text' 
                         style={{backgroundColor: '#353535', border: '1px solid #BCBCBC', color: 'white'}} 
                         onChange={(e) => setSearchItem(e.target.value)}
-                        // onChange={handleFilter}
                         placeholder='Search...'  
                         value={searchItem}
                     />

@@ -10,7 +10,6 @@ export default function Category() {
     const title = 'Category'
     document.title = 'DumbMerch | ' + title
 
-    // const [category, setCategory] = useState(dataCategory)
     const [idDelete, setIdDelete] = useState(null)
     const [confirmDelete, setConfirmDelete] = useState(null)
 

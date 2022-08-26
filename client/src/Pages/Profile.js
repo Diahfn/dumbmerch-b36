@@ -36,7 +36,7 @@ export default function Profile() {
       }
     }
     const response = await api.get('/transactions', config)
-    // console.log(response.data.data)
+    
     return response.data.data
   })
 

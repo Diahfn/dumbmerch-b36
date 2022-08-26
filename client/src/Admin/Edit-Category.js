@@ -17,7 +17,7 @@ export default function EditCategory() {
 
     let { refetch } = useQuery('categoriesCache', async () => {
         const response = await api.get('/category/' + id)
-        // console.log(response.data.name)
+        
         setCategory({ name: response.data })
     })
 

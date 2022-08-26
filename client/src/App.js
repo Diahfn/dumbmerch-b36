@@ -24,6 +24,7 @@ function App() {
   const api = API()
   const navigate = useNavigate()
   
+  // Check whether the logged in user is admin or customer
   useEffect(() => {
     if (!state.isLogin) {
       navigate('/auth')
@@ -45,8 +46,7 @@ function App() {
         }
       }
       const response = await api.get('/check-auth', config)
-      // console.log(response)
-
+      
       if (response.status === 'Failed') {
         return dispatch({
           type: 'AUTH_ERROR'

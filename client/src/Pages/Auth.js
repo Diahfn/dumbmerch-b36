@@ -1,9 +1,8 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 
 import Frame from '../Assets/Frame.png'
 import Login from '../Components/Auth/Login'
 import Register from '../Components/Auth/Register'
-import { UserContext } from '../Context/User-Context'
 
 export default function Auth() {
 
